@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoyeon's Shop</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" media="all and (max-width:720px)" href="css/mobile.css">
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <div class="container top-header">
+    <div class="row justify-content-between py-2">
+      <div class="top-left">
+        <!-- 로그인 -->
+        <a href="#">LOGIN</a>
+        <!-- 회원가입 -->
+        <a href="#" class="join">JOIN US</a>
+        <!-- <a href="#">MYPAGE</a> -->
+        <a href="#" class="mobile-none">ORDER</a>
+        <!-- 장바구니에 담긴 수량을 함께 표시 -->
+        <a href="#" class="carts">CART <span class="badge badge-secondary">0</span></a>
+      </div>
+      <div class="top-right">
+        <ul class="d-flex list-unstyled">
+          <li><a href="#" class="mobile-none">NOTICE</a></li>
+          <li><a href="#">Q&A</a></li>
+          <li><a href="#">배송조회</a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#" class="search"><i class="fas fa-search"></i></a>
+            <!-- 검색창 -->
+            <div class="searchbox">
+              <form action="" name="searchform" class="input-group">
+                <input type="text" class="form-control" placeholder="검색...">
+                <div class="input-group-append">
+                  <button class="btn btn-secondary">OK</button>
+                </div>
+              </form>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <header>
+    <div class="logo">
+      MY SHOP
+    </div>
+    <nav>
+      <div class="container">
+        <div class="row position-relative">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="hamburger-mobile">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="navbar-nav gnb justify-content-between">
+            <li><a href="#">best</a></li>
+            <li><a href="#">new</a></li>
+            <li><a href="#" class="bold">made myshop</a>
+                <ul class="navbar-nav lnb">
+                    <li><a href="#">top</a></li>
+                    <li><a href="#">outer</a></li>
+                    <li><a href="#">pants</a></li>
+                    <li><a href="#">dress</a></li>
+                    <li><a href="#">skirt</a></li>
+                    <li><a href="#">acc</a></li>    
+                </ul>
+            </li>
+            <li><a href="#" class="bold">1만원대</a></li>
+            <li><a href="#">set</a></li>
+            <li><a href="#">top</a>
+                <ul class="navbar-nav lnb">
+                    <li><a href="#">knit</a></li>
+                    <li><a href="#">tee</a></li>
+                    <li><a href="#">cami</a></li>
+                    <li><a href="#">blouse</a></li>   
+                </ul>
+            </li>
+            <li><a href="#">outer</a>
+                <ul class="navbar-nav lnb">
+                    <li><a href="#">jacket</a></li>
+                    <li><a href="#">jumper</a></li>
+                    <li><a href="#">coat</a></li>
+                    <li><a href="#">vest</a></li>   
+                </ul>
+            </li>
+            <li><a href="#">pants</a>
+                <ul class="navbar-nav lnb">
+                    <li><a href="#">denim</a></li>
+                    <li><a href="#">leggings</a></li>
+                    <li><a href="#">shorts</a></li>
+                    <li><a href="#">slacks</a></li>   
+                </ul>
+            </li>
+            <li><a href="#">dress</a></li>
+            <li><a href="#">skirt</a></li>
+            <li><a href="#">shoes</a></li>
+            <li><a href="#">bag</a></li>
+            <li><a href="#">acc</a>
+                <ul class="navbar-nav lnb">
+                    <li><a href="#">scarf</a></li>
+                    <li><a href="#">socks</a></li>
+                    <li><a href="#">jewely</a></li>
+                    <li><a href="#">etc</a></li>   
+                </ul>
+            </li>
+            <li><a href="#">basic</a></li>
+            <li><a href="#" class="bold">sale</a>
+                <ul class="navbar-nav lnb">
+                    <li><a href="#">bag sale</a></li> 
+                </ul>
+            </li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container pb-5">
+    <div class="row">
+      <div class="slider">
+        <div class="imgbox z-index-2" style="background-image: url(img/slider01.jpg);"></div>
+        <div class="imgbox z-index-1" style="background-image: url(img/slider02.jpg);"></div>
+        <div class="imgbox" style="background-image: url(img/slider03.jpg);"></div>
+        <ul class="page"></ul>
+      </div>
+    </div>
+    <div class="mtml-15">
+      <div class="row my-5">
+        <div class="col-6">
+          <div class="imgbox2" style="background-image:url(img/left.jpg)"></div>
+        </div>
+        <div class="col-3">
+          <div class="imgbox2 d-flex flex-column justify-content-center">
+            <h2>HOTDEAL</h2>
+            <p>핫 아이템! 깜짝 할인가로 만나볼 수 있는 핫딜</p>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="imgbox2" style="background-image:url(img/right.png)"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2 class="sub-title text-center pt-5 mt-5">WEEKLY BEST</h2>
+    <div class="row">
+      <ul class="w-category d-flex mb-4">
+        <li><a href="#" id="try" data-link="best" class="active">BEST</a></li>
+        <li><a href="#" data-link="top">TOP</a></li>
+        <li><a href="#" data-link="outer">OUTER</a></li>
+        <li><a href="#" data-link="bottom">BOTTOM</a></li>
+        <li><a href="#" data-link="dress">DRESS</a></li>
+      </ul>  
+      <!-- 목록 -->
+      <div class="container overflow-hidden position-relative h800">
+        <div class="container-in d-flex position-absolute">
+          <!-- 상품 BEST -->
+          <div class="row list-8 mt-4" id="best">
+            <a href="#" class="col-md-3 col-6 mb-3" data-text="베스트의상||200,000원">
+              <img src="img/001.jpg" alt="001">
+        
+            </a>
+            <a href="#" class="col-md-3 col-6 mb-3">
+              <img src="img/002.jpg" alt="002">
+            </a>
+            <a href="#" class="col-md-3 col-6 mb-3">
+              <img src="img/003.jpg" alt="003">
+              <div class="over">실켓 딥 라운드넥 원피스<br><br>69,000 won</div>
+            </a>
+            <a href="#" class="col-md-3 col-6 mb-3">
+              <img src="img/004.jpg" alt="004">
+              <div class="over">우아 플레어 원피스<br><br>78,000 won</div>
+            </a>
+            <a href="#" class="col-md-3 col-6 mb-3">
+              <img src="img/005.jpg" alt="005">
+              <div class="over">반팔 플리츠슬릿 원피스<br><br>45,000 won</div>
+            </a>
+            <a href="#" class="col-md-3 col-6 mb-3">
+              <img src="img/006.jpg" alt="006">
+              <div class="over">모달코튼 U넥 골지 5부 니트<br><br>32,000 won</div>
+            </a>
+            <a href="#" class="col-md-3 col-6 mb-3">
+              <img src="img/007.jpg" alt="007">
+              <div class="over">샤 플레어 스커트<br><br>59,000 won</div>
+            </a>
+            <a href="#" class="col-md-3 col-6 mb-3">
+              <img src="img/008.jpg" alt="008">
+              <div class="over">러브 라인배색 티<br><br>22,000 won</div>
+            </a>
+          </div>
+          <!-- 상품 TOP -->
+          <div class="row list-8" id="top">
+            <a href="#" class="col-md-3 col-6 mb-3">
+              <img src="img/top001.jpg" alt="001">
+            </a>
+            <a href="#" class="col-md-3 col-6 mb-3">
+              <img src="img/top002.jpg" alt="002">
+            </a>
+            <a href="#" class="col-md-3 col-6 mb-3">
+              <img src="img/top003.jpg" alt="003">
+            </a>
+            <a href="#" class="col-md-3 col-6 mb-3">
+              <img src="img/top004.jpg" alt="004">
+            </a>
+            <a href="#" class="col-md-3 col-6 mb-3">
+              <img src="img/top005.jpg" alt="005">
+            </a>
+            <a href="#" class="col-md-3 col-6 mb-3">
+              <img src="img/top006.jpg" alt="006">
+            </a>
+            <a href="#" class="col-md-3 col-6 mb-3">
+              <img src="img/top007.jpg" alt="007">
+            </a>
+            <a href="#" class="col-md-3 col-6 mb-3">
+              <img src="img/top008.jpg" alt="008">
+            </a>
+          </div>
+          <!-- 상품 OUTER -->
+          <div class="row list-8" id="outer">
+            <a href="#" class="col-md-3 col-6 mb-3">
+              <img src="img/outer001.jpg" alt="001">
+            </a>
+            <a href="#" class="col-md-3 col-6 mb-3">
+              <img src="img/outer002.jpg" alt="002">
+            </a>
+            <a href="#" class="col-md-3 col-6 mb-3">
+              <img src="img/outer003.jpg" alt="003">
+            </a>
+            <a href="#" class="col-md-3 col-6 mb-3">
+              <img src="img/outer004.jpg" alt="004">
+            </a>
+            <a href="#" class="col-md-3 col-6 mb-3">
+              <img src="img/outer005.jpg" alt="005">
+            </a>
+            <a href="#" class="col-md-3 col-6 mb-3">
+              <img src="img/outer006.jpg" alt="006">
+            </a>
+            <a href="#" class="col-md-3 col-6 mb-3">
+              <img src="img/outer007.jpg" alt="007">
+            </a>
+            <a href="#" class="col-md-3 col-6 mb-3">
+              <img src="img/outer008.jpg" alt="008">
+            </a>
+          </div>
+          <!-- 상품 BOTTOM -->
+          <div class="row list-8" id="bottom">
+            <a href="#" class="col-md-3 col-6 mb-3">
+              <img src="img/bottom001.jpg" alt="001">
+            </a>
+            <a href="#" class="col-md-3 col-6 mb-3">
+              <img src="img/bottom002.jpg" alt="002">
+            </a>
+            <a href="#" class="col-md-3 col-6 mb-3">
+              <img src="img/bottom003.jpg" alt="003">
+            </a>
+            <a href="#" class="col-md-3 col-6 mb-3">
+              <img src="img/bottom004.jpg" alt="004">
+            </a>
+            <a href="#" class="col-md-3 col-6 mb-3">
+              <img src="img/bottom005.jpg" alt="005">
+            </a>
+            <a href="#" class="col-md-3 col-6 mb-3">
+              <img src="img/bottom006.jpg" alt="006">
+            </a>
+            <a href="#" class="col-md-3 col-6 mb-3">
+              <img src="img/bottom007.jpg" alt="007">
+            </a>
+            <a href="#" class="col-md-3 col-6 mb-3">
+              <img src="img/bottom008.jpg" alt="008">
+            </a>
+          </div>
+          <!-- 상품 DRESS -->
+          <div class="row list-8" id="dress">
+            <a href="#" class="col-md-3 col-6 mb-3">
+              <img src="img/dress001.jpg" alt="001">
+            </a>
+            <a href="#" class="col-md-3 col-6 mb-3">
+              <img src="img/dress002.jpg" alt="002">
+            </a>
+            <a href="#" class="col-md-3 col-6 mb-3">
+              <img src="img/dress003.jpg" alt="003">
+            </a>
+            <a href="#" class="col-md-3 col-6 mb-3">
+              <img src="img/dress004.jpg" alt="004">
+            </a>
+            <a href="#" class="col-md-3 col-6 mb-3">
+              <img src="img/dress005.jpg" alt="005">
+            </a>
+            <a href="#" class="col-md-3 col-6 mb-3">
+              <img src="img/dress006.jpg" alt="006">
+            </a>
+            <a href="#" class="col-md-3 col-6 mb-3">
+              <img src="img/dress007.jpg" alt="007">
+            </a>
+            <a href="#" class="col-md-3 col-6 mb-3">
+              <img src="img/dress008.jpg" alt="008">
+            </a>
+          </div> <!-- dress -->
+        </div> <!-- container-in -->
+      </div>
+    </div>
+  </div>
+  <!-- list -->
+  <div class="container">
+    <div class="title-box mb-5 pb-2 d-flex justify-content-between">
+      <h1>--= 상품목록</h1>
+      <div class="v-list d-flex justify-content-between">
+        <table class="list" title="목록으로 보기">
+          <tr>
+            <td width="15"></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td width="15"></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td width="15"></td>
+            <td></td>
+          </tr>
+        </table>
+        <table class="grid-4" title="4개씩 보기">
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+        <table class="grid-5" title="5개씩 보기">
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="row product-list">
+      <div class="col-6 col-md-3 col-lg-4 my-3">
+        <div class="card">
+          <img src="img/001.jpg" alt="001" class="img-fluid">
+          <h5 class="card-title pt-2"><a href="view.html">아주 예쁜 옷</a></h5>
+          <p class="card-text pb-2">353,000원</p>
+          <a href="#" class="wish"><i class="fab fa-gratipay"></i></a>
+          <a href="#" class="cart"><i class="fas fa-shopping-basket"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-4 my-3">
+        <div class="card">
+          <img src="img/top001.jpg" alt="001" class="img-fluid">
+          <h5 class="card-title pt-2"><a href="view.html">아주 예쁜 옷</a></h5>
+          <p class="card-text pb-2">353,000원</p>
+          <a href="#" class="wish"><i class="fab fa-gratipay"></i></a>
+          <a href="#" class="cart"><i class="fas fa-shopping-basket"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-4 my-3">
+        <div class="card">
+          <img src="img/outer001.jpg" alt="001" class="img-fluid">
+          <h5 class="card-title pt-2"><a href="view.html">아주 예쁜 옷</a></h5>
+          <p class="card-text pb-2">353,000원</p>
+          <a href="#" class="wish"><i class="fab fa-gratipay"></i></a>
+          <a href="#" class="cart"><i class="fas fa-shopping-basket"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-4 my-3">
+        <div class="card">
+          <img src="img/dress001.jpg" alt="001" class="img-fluid">
+          <h5 class="card-title pt-2"><a href="view.html">아주 예쁜 옷</a></h5>
+          <p class="card-text pb-2">353,000원</p>
+          <a href="#" class="wish"><i class="fab fa-gratipay"></i></a>
+          <a href="#" class="cart"><i class="fas fa-shopping-basket"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-4 my-3">
+        <div class="card">
+          <img src="img/bottom001.jpg" alt="001" class="img-fluid">
+          <h5 class="card-title pt-2"><a href="view.html">아주 예쁜 옷</a></h5>
+          <p class="card-text pb-2">353,000원</p>
+          <a href="#" class="wish"><i class="fab fa-gratipay"></i></a>
+          <a href="#" class="cart"><i class="fas fa-shopping-basket"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-4 my-3">
+        <div class="card">
+          <img src="img/002.jpg" alt="001" class="img-fluid">
+          <h5 class="card-title pt-2"><a href="view.html">아주 예쁜 옷</a></h5>
+          <p class="card-text pb-2">353,000원</p>
+          <a href="#" class="wish"><i class="fab fa-gratipay"></i></a>
+          <a href="#" class="cart"><i class="fas fa-shopping-basket"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-4 my-3">
+        <div class="card">
+          <img src="img/top002.jpg" alt="001" class="img-fluid">
+          <h5 class="card-title pt-2"><a href="view.html">아주 예쁜 옷</a></h5>
+          <p class="card-text pb-2">353,000원</p>
+          <a href="#" class="wish"><i class="fab fa-gratipay"></i></a>
+          <a href="#" class="cart"><i class="fas fa-shopping-basket"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-4 my-3">
+        <div class="card">
+          <img src="img/outer002.jpg" alt="001" class="img-fluid">
+          <h5 class="card-title pt-2"><a href="view.html">아주 예쁜 옷</a></h5>
+          <p class="card-text pb-2">353,000원</p>
+          <a href="#" class="wish"><i class="fab fa-gratipay"></i></a>
+          <a href="#" class="cart"><i class="fas fa-shopping-basket"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-4 my-3">
+        <div class="card">
+          <img src="img/dress002.jpg" alt="001" class="img-fluid">
+          <h5 class="card-title pt-2"><a href="view.html">아주 예쁜 옷</a></h5>
+          <p class="card-text pb-2">353,000원</p>
+          <a href="#" class="wish"><i class="fab fa-gratipay"></i></a>
+          <a href="#" class="cart"><i class="fas fa-shopping-basket"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-4 my-3">
+        <div class="card">
+          <img src="img/bottom002.jpg" alt="001" class="img-fluid">
+          <h5 class="card-title pt-2"><a href="view.html">아주 예쁜 옷</a></h5>
+          <p class="card-text pb-2">353,000원</p>
+          <a href="#" class="wish"><i class="fab fa-gratipay"></i></a>
+          <a href="#" class="cart"><i class="fas fa-shopping-basket"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-4 my-3">
+        <div class="card">
+          <img src="img/top003.jpg" alt="001" class="img-fluid">
+          <h5 class="card-title pt-2"><a href="view.html">아주 예쁜 옷</a></h5>
+          <p class="card-text pb-2">353,000원</p>
+          <a href="#" class="wish"><i class="fab fa-gratipay"></i></a>
+          <a href="#" class="cart"><i class="fas fa-shopping-basket"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-4 my-3">
+        <div class="card">
+          <img src="img/outer003.jpg" alt="001" class="img-fluid">
+          <h5 class="card-title pt-2"><a href="view.html">아주 예쁜 옷</a></h5>
+          <p class="card-text pb-2">353,000원</p>
+          <a href="#" class="wish"><i class="fab fa-gratipay"></i></a>
+          <a href="#" class="cart"><i class="fas fa-shopping-basket"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-4 my-3">
+        <div class="card">
+          <img src="img/bottom003.jpg" alt="001" class="img-fluid">
+          <h5 class="card-title pt-2"><a href="view.html">아주 예쁜 옷</a></h5>
+          <p class="card-text pb-2">353,000원</p>
+          <a href="#" class="wish"><i class="fab fa-gratipay"></i></a>
+          <a href="#" class="cart"><i class="fas fa-shopping-basket"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-4 my-3">
+        <div class="card">
+          <img src="img/dress003.jpg" alt="001" class="img-fluid">
+          <h5 class="card-title pt-2"><a href="view.html">아주 예쁜 옷</a></h5>
+          <p class="card-text pb-2">353,000원</p>
+          <a href="#" class="wish"><i class="fab fa-gratipay"></i></a>
+          <a href="#" class="cart"><i class="fas fa-shopping-basket"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-4 my-3">
+        <div class="card">
+          <img src="img/dress004.jpg" alt="001" class="img-fluid">
+          <h5 class="card-title pt-2"><a href="view.html">아주 예쁜 옷</a></h5>
+          <p class="card-text pb-2">353,000원</p>
+          <a href="#" class="wish"><i class="fab fa-gratipay"></i></a>
+          <a href="#" class="cart"><i class="fas fa-shopping-basket"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class='container-fluid'>
+      <div class="card"> 
+          <div class="card-body">
+              <div class="row m-0 pt-5">
+                  <div class="card col-12 col-md-3">
+                      <div class="card-content"> <i class="fas fa-hand-holding-usd fa-3x"></i>
+                          <div class="card-title"> RECHARGE REPEAT CUSTOMER </div>
+                          <p><small>Save customers' cards for future phone orders</small></p>
+                          <div class="learn-more">
+                              <p> <small> LEARN MORE <label><i class="fas fa-angle-right"></i></label> </small> </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card col-12 col-md-3">
+                      <div class="card-content"> <i class="far fa-handshake fa-3x"></i>
+                          <div class="card-title"> ACCEPT ELECTRONIC CHECK </div>
+                          <p><small>Save customers' cards for future phone orders</small></p>
+                          <div class="learn-more">
+                              <p> <small> LEARN MORE <label><i class="fas fa-angle-right"></i></label> </small> </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card col-12 col-md-3">
+                      <div class="card-content"> <i class="fas fa-mobile-alt fa-3x"></i>
+                          <div class="card-title"> STREAMLINE PHONE PAYMENTS </div>
+                          <p><small>Save customers' cards for future phone orders</small></p>
+                          <div class="learn-more">
+                              <p> <small> LEARN MORE <label><i class="fas fa-angle-right"></i></label> </small> </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card col-12 col-md-3">
+                      <div class="card-content"> <i class="fas fa-user-secret fa-3x"></i>
+                          <div class="card-title"> STAY<br /> SECURE </div>
+                          <p><small>Save customers' cards for future phone orders</small></p>
+                          <div class="learn-more">
+                              <p> <small> LEARN MORE <label><i class="fas fa-angle-right"></i></label> </small> </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="card-footer row m-0">
+              <p> <label> <i class="fas fa-phone fa-rotate-90 text-primary"></i> </label> 800-601-0230</p>
+              <div>
+                  <p> <small class="follow-text">FOLLOW US ON Hoyeon's SHOP</small> <label class="footer-right"> <i class="fab fa-instagram"></i> <i class="fab fa-facebook-square"></i> <i class="fab fa-linkedin"></i> <i class="fab fa-twitter-square"></i> </label> </p>
+              </div>
+          </div>
+      </div>
+  </div>
+  </footer>
+</body>
+</html>

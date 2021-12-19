@@ -1,0 +1,65 @@
+{
+  "cart":
+    [
+      {
+        "prd": "A0001",
+        "img": "img/xex.jpg",
+        "title": "리웨 롱가디건",
+        "color": "블랙",
+        "size": "XL",
+        "quantity": 1,
+        "description": "매진임박 계절아이템",
+        "ormoney": 580000,
+        "dcmoney": 400000,
+        "point": 40
+      },
+      {
+        "prd": "A0002",
+        "img": "img/003.jpg",
+        "title": "하얀 블라우스",
+        "color": "흰색",
+        "size": "L",
+        "quantity": 1,
+        "description": "봄가을에 블라우스",
+        "ormoney": 580000,
+        "dcmoney": 400000,
+        "point": 40
+      },
+      {
+        "prd": "A0003",
+        "img": "img/004.jpg",
+        "title": "블루 스키니진",
+        "color": "파랑색",
+        "size": "M",
+        "quantity": 2,
+        "description": "좋아하는 바지",
+        "ormoney": 52000,
+        "dcmoney": 41000,
+        "point": 40
+      },
+      {
+        "prd": "A0004",
+        "img": "img/005.jpg",
+        "title": "하늘색 와이셔츠",
+        "color": "하늘색",
+        "size": "L",
+        "quantity": 1,
+        "description": "매진임박 와이셔츠",
+        "ormoney": 200000,
+        "dcmoney": 180000,
+        "point": 20
+      },
+      {
+        "prd": "A0005",
+        "img": "img/006.jpg",
+        "title": "리웨 롱가디건",
+        "color": "블랙",
+        "size": "S",
+        "quantity": 1,
+        "description": "매진임박 계절아이템",
+        "ormoney": 580000,
+        "dcmoney": 400000,
+        "point": 40
+      }
+    ]
+}

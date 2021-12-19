@@ -1,0 +1,612 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url(all.css);
+@import url(animate.css);
+@import url(bootstrap.min.css);
+@import url(color.css);
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+a:hover {
+  color: rgba(0, 0, 0, 0.4);
+}
+.bold {
+  font-weight: bold;
+}
+.mtml-15 {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+/****** HEADER *****/
+.top-header, header {
+  text-transform: uppercase;
+}
+.top-header {
+  font-size: 12px;
+}
+.top-header a {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.join {
+  position: relative;
+  display: inline-block;
+}
+/* 말풍선 만들어주기 */
+.join::after {
+  content: "+3,000P";
+  display: block;
+  padding: 3px 8px;
+  background-color: #d9d9d9;
+  color: #fff;
+  position: absolute;
+  bottom: -30px;
+  animation: updown 2s infinite;
+}
+/* 말풍선에 붙어있는 뾰족한 세모같은거 */
+.join::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-width: 3px;
+  border-style: solid;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: #c9c9c9;
+  position: absolute;
+  bottom: -6px;
+  left: 20px;
+  animation: updown2 2s infinite;
+}
+.top-right ul li:last-child {
+  position: relative;
+}
+.searchbox {
+  position: absolute;
+  width: 230px;
+  top: 30px;
+  left: -200px;
+  display: none;
+  z-index: 99;
+}
+.logo {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  font-size: 60px;
+  color: #333;
+  padding-bottom: 30px;
+}
+nav {
+  border-bottom: 1px solid #c9c9c9;
+  padding-bottom: 15px;
+  width: 100%;
+}
+nav.fixed{
+  position:fixed;
+  top:0;
+  padding-top:15px;
+  background:rgba(255,255,255,0.8);
+  z-index: 999;
+}
+.hamburger-mobile{
+  display: none;
+}
+.hamburger,.hamburger-mobile {
+  width: 25px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+.hamburger-mobile.close span:first-child{
+  transform: rotate(-45deg) translate(-5px, 0px);
+  transition: 300ms;
+}
+.hamburger-mobile.close span:nth-child(2){
+  display: none;
+  transition: 300ms;
+}
+.hamburger-mobile.close span:last-child{
+  transform: rotate(45deg) translate(-4px, 0px);
+  transition: 300ms;
+}
+.hamburger span,.hamburger-mobile span {
+  display: block;
+  margin-top: 4px;
+  height: 2px;
+  background-color: #000;
+}
+.navbar-nav.gnb {
+  width: calc(100% - 65px);
+  flex-direction: row;
+}
+.gnb>li {
+  position: relative;
+}
+.lnb {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: -20;
+  padding: 30px 15px 15px;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.8);
+}
+.gnb>li:last-child>ul.lnb {
+  left: -80px;
+}
+.lnb li {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+strong{
+  font-weight: 700;
+}
+/****** 본문 *******/
+
+/***** slider *****/
+.slider {
+  width: 100%;
+  height: 750px;
+  position: relative;
+}
+.imgbox {
+  height: 750px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+}
+.z-index-1 {
+  z-index: 1;
+}
+.z-index-2 {
+ z-index: 2; 
+}
+ul.page {
+ list-style-type: none;
+ display: flex; 
+ position: absolute;
+ bottom: -10px;
+ right: 15px;
+ z-index: 1000;
+}
+ul.page li {
+  width: 10px;
+  height: 10px;
+  background-color:#eee;
+  border-radius: 50%;
+  margin: 5px;
+}
+ul.page li.active {
+  background-color: #333;
+}
+.imgbox2 {
+  height: 270px;
+  background-color: #666;
+  text-align: center;
+  color: #fff;
+  background-size: cover;
+}
+.imgbox2 h2 {
+  letter-spacing: 10px;
+}
+.imgbox2 p {
+  letter-spacing: -1px;
+}
+/*** WEEKLY BEST ***/
+.sub-title {
+  color: #555;
+  font-size: 18px;
+  font-weight: 300;
+}
+ul.w-category {
+  list-style-type: none;
+  width: 100%;
+  /* justify-content: space-around; */
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+}
+ul.w-category li {
+  width: 25%;
+  text-align: center;
+  border: 1px solid #999;
+  border-right: none;
+  font-size: 12px;
+}
+ul.w-category li:last-child {
+  border-right: 1px solid #999;
+}
+ul.w-category a {
+  display: block;
+  padding: 10px;
+}
+ul.w-category a.active {
+  /* font-weight: bold; */
+  background-color: #eee;
+  color: #333;
+}
+.list-8 {
+  width: 1140px;
+  margin-right: 20px;
+  position: relative;
+}
+.list-8 .over {
+  position: absolute;
+  padding: 40px;
+  font-size: 18px;
+  width: 65%;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  top: 70px;
+  left: 50%;
+  transform: translate(-50%);
+  /* display: none; */
+  opacity: 0;
+  transition: all 0.5s;
+}
+.list-8 a:hover .over {
+  /* display: block; */
+  opacity: 1;
+}
+.list-8 img {
+  max-width: 100%;
+  height: 380px;
+  width: 265px;
+}
+.container-in {
+  width: 5700px;
+}
+.h800 {
+  height: 830px;
+}
+.title-box {
+  border-bottom: 1px solid #666;
+}
+.title-box h1 {
+  font-size: 30px;
+  width: 50%;;
+}
+.v-list {
+  width: 160px;
+  box-sizing: content-box;
+}
+.v-list table {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  cursor: pointer;
+}
+.v-list table, .v-list tr, .v-list td {
+  border: 3px solid #fff;
+  border-collapse: collapse;
+}
+table td {
+  height: 6px;
+  background: #666;
+}
+.card {
+  position: relative;
+}
+a.wish, a.cart{
+  font-size: 40px;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+}
+.card a.wish{
+  left: 20px;
+  color: rgb(248, 76, 76);
+  opacity: 0;
+}
+.card a.cart {
+  right: 20px;
+  color: cornflowerblue;
+  opacity: 0;
+}
+.card:hover a.wish,
+.card:hover a.cart {
+  opacity: 0.7;
+}
+.card a.wish:hover,
+.card a.cart:hover {
+  opacity: 1;
+}
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.col-25 {
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
+  max-width: 20%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.card-title,.card-text {
+  text-align: center;
+}
+.card-list {
+  position: relative;
+}
+.card-list .card {
+  border:none;
+  border-bottom: 1px dashed #999;
+  padding-bottom: 30px;
+}
+.card-list img {
+  width: 200px;
+  float: left;
+}
+.card-list h5.card-title, .card-list p.card-text {
+  width: calc(100% - 220px);
+  position: absolute;
+  left: 220px;
+  text-align: left;
+}
+.card-list p {
+  top: 50px;
+  left: 220px;
+}
+.card-list a.wish {
+  top: 80px;
+  left: 220px;
+}
+.card-list a.cart {
+  top: 80px;
+  left: 280px;
+}
+/** footer **/
+footer{
+  background-color:#616161;
+}
+footer .card{
+ color:#fff;
+ margin-top:50px;
+ border:none;
+ background-color:#616161;
+}
+footer .card-footer{
+  justify-content:space-between;
+  border:none;
+  background:none;
+  border-bottom:0.5px solid #9e9e9e;
+}
+.footer-right>i{
+  margin-left:15px;
+}
+.fa-hand-holding-usd{
+  color:#ffb74d;
+}
+.fa-handshake{
+  color:#ffb74d;
+}
+
+footer .card-title{
+  margin-bottom:.75rem;
+  font-weight:700;
+  font-size:15px;
+  margin-top:1.75rem;
+}
+.learn-more{
+  margin-left:10px;
+}
+.fa-3x{
+  color:#ffb74d;   
+}
+.fa-angle-right{
+  margin-left:10px;
+}
+footer .card-content{
+  padding: 10px 40px 10px 30px;
+}
+footer .card-content>p{
+  color:#9e9e9e;
+}
+
+/********* VIEW **********/
+.view-simg-list img{
+  max-width: 100%;
+  margin-top: 10px;
+  border: 5px solid #999;
+  cursor:pointer;
+}
+img.act {
+  border-color: #333;;
+}
+.view-simg-list{
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.col-cu-3{
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 25%;
+}
+.col-cu-3 img{
+  width: 100%;
+  height: 135px;
+  object-fit: cover;
+}
+.price{
+  font-size: 25px;
+}
+.label {
+  margin-bottom: 0;
+}
+.label label{
+  color: #999;
+  margin-right: 15px;
+}
+.color label{
+  display: inline-block;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.product-option{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+li.color{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+li.color div{
+  padding: 10px 10px 10px 60px;
+}
+li.color span{
+  vertical-align: top;
+  margin-right: 30px;
+}
+.color input[type=radio]{
+  display: none;
+}
+#white+label{
+  border: 1px solid #666;
+}
+#green+label{
+  background-color: green;
+}
+#olive+label{
+  background-color: olive;
+}
+#grey+label{
+  background-color: gray;;
+}
+#black+label{
+  background-color: black;
+}
+/**** 주문정보 *****/
+.quantity,.total{
+  width: 67%;
+  background-color: #e9e9e9;
+}
+.quantity{
+  padding: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #999;
+}
+.quantity>div{
+  width: 50%;
+}
+.quantity p{
+  margin-top: 15px;
+}
+.quantity span{
+  margin-right: 15px;
+  display: inline-block;
+  margin-top: 15px;
+}
+.quantity span:last-child{
+  margin-top: 0;
+}
+.total{
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+.qty-box {
+  border: 1px solid #999;
+  background-color: #fff;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+}
+.flex-end{
+  justify-content: flex-end;
+}
+.qty-box a:hover{
+  text-decoration: none;
+  background: #eee;
+}
+.qty-box a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+.qty-box a:first-child{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  font-size: 30px;
+  line-height: 29px;
+  text-align: center;
+  border-right: 1px solid #999;
+}
+.qty-box a:last-child{
+  border-left: 1px solid #999;
+}
+.qty-box input[type=text]{
+  border: none;
+  width: 40px;
+  text-align: center;
+  vertical-align: super;
+}
+.btn-box{
+  padding-top: 10px;
+}
+
+.btn-opt{
+  margin-right: 5px;
+  background-color: #e9e9e9;
+  font-size: 30px;
+  color: #999;
+  border-radius: 0;
+  padding: 10px 20px;
+  border-bottom: 1px solid #999;
+}
+.btn-opt:hover,.btn-order:hover{
+  color: #9c6819;
+}
+.btn-order{
+  background-color: #e9e9e9;
+  font-size: 30px;
+  font-weight: 700;
+  height: 68px;
+  width: 200px;
+  border-radius: 0;
+  border-bottom: 1px solid #999;
+}
+/*********** login **********/
+.wrapper{
+  margin: 150px auto 100px;
+  width: 50%;
+  padding: 60px 80px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+.wrapper label {
+  text-indent: -2000px;
+}
+
+  @keyframes updown {
+  0%{bottom:-30px;}
+  10%{bottom:-35px;}
+  20%{bottom:-30px;}
+  30%{bottom:-35px;}
+  40%{bottom:-30px;}
+}
+@keyframes updown2 {
+  0%{bottom:-8px;}
+  10%{bottom:-13px;}
+  20%{bottom:-8px;}
+  30%{bottom:-13px;}
+  40%{bottom:-8px;}
+}

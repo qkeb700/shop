@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/order.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <div class="container top-header">
+    <div class="row justify-content-between py-2">
+      <div class="top-left">
+        <!-- 로그인 -->
+        <a href="#">LOGIN</a>
+        <!-- 회원가입 -->
+        <a href="#" class="join">JOIN US</a>
+        <a href="#">ORDER</a>
+        <!-- 장바구니에 담긴 수량을 함께 표시 -->
+        <a href="#" class="carts">CART <span class="badge badge-secondary">0</span></a>
+        <a href="#">MYPAGE</a>
+      </div>
+      <div class="top-right">
+        <ul class="d-flex list-unstyled">
+          <li><a href="#">NOTICE</a></li>
+          <li><a href="#">Q&A</a></li>
+          <li><a href="#">배송조회</a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#" class="search"><i class="fas fa-search"></i></a>
+            <!-- 검색창 -->
+            <div class="searchbox">
+              <form action="" name="searchform" class="input-group">
+                <input type="text" class="form-control" placeholder="검색...">
+                <div class="input-group-append">
+                  <button class="btn btn-secondary">OK</button>
+                </div>
+              </form>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <header>
+    <div class="logo">
+      MY SHOP
+    </div>
+    <nav>
+      <div class="container">
+        <div class="row">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="navbar-nav gnb justify-content-between">
+            <li><a href="#">best</a></li>
+            <li><a href="#">new</a></li>
+            <li><a href="#" class="bold">made myshop</a>
+                <ul class="navbar-nav lnb">
+                    <li><a href="#">top</a></li>
+                    <li><a href="#">outer</a></li>
+                    <li><a href="#">pants</a></li>
+                    <li><a href="#">dress</a></li>
+                    <li><a href="#">skirt</a></li>
+                    <li><a href="#">acc</a></li>    
+                </ul>
+            </li>
+            <li><a href="#" class="bold">1만원대</a></li>
+            <li><a href="#">set</a></li>
+            <li><a href="#">top</a>
+                <ul class="navbar-nav lnb">
+                    <li><a href="#">knit</a></li>
+                    <li><a href="#">tee</a></li>
+                    <li><a href="#">cami</a></li>
+                    <li><a href="#">blouse</a></li>   
+                </ul>
+            </li>
+            <li><a href="#">outer</a>
+                <ul class="navbar-nav lnb">
+                    <li><a href="#">jacket</a></li>
+                    <li><a href="#">jumper</a></li>
+                    <li><a href="#">coat</a></li>
+                    <li><a href="#">vest</a></li>   
+                </ul>
+            </li>
+            <li><a href="#">pants</a>
+                <ul class="navbar-nav lnb">
+                    <li><a href="#">denim</a></li>
+                    <li><a href="#">leggings</a></li>
+                    <li><a href="#">shorts</a></li>
+                    <li><a href="#">slacks</a></li>   
+                </ul>
+            </li>
+            <li><a href="#">dress</a></li>
+            <li><a href="#">skirt</a></li>
+            <li><a href="#">shoes</a></li>
+            <li><a href="#">bag</a></li>
+            <li><a href="#">acc</a>
+                <ul class="navbar-nav lnb">
+                    <li><a href="#">scarf</a></li>
+                    <li><a href="#">socks</a></li>
+                    <li><a href="#">jewely</a></li>
+                    <li><a href="#">etc</a></li>   
+                </ul>
+            </li>
+            <li><a href="#">basic</a></li>
+            <li><a href="#" class="bold">sale</a>
+                <ul class="navbar-nav lnb">
+                    <li><a href="#">bag sale</a></li> 
+                </ul>
+            </li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <h1 class="text-center my-5 pt-5">주문서작성</h1>
+
+    <table class="order-cart py-5">
+      <thead>
+        <colgroup>
+          <col width="5%">
+          <col>
+          <col width="8%">
+          <col width="10%">
+          <col width="10%">
+          <col width="8%">
+          <col width="8%">
+          <col width="8%">
+        </colgroup>
+        <tr>
+          <th>
+            <input type="checkbox" name="all" value="1" id="" checked>
+          </th>
+          <th>상품명</th>
+          <th>가격</th>
+          <th>수량</th>
+          <th>합계</th>
+          <th>적립금</th>
+          <th>배송비</th>
+          <th><button type="button" class="btn btn-outline-danger btn-del">삭제하기</button></th>
+        </tr>
+      </thead>
+      <tbody id="cart-body">
+        <tr> 
+          <td class="text-center">
+            <input type="checkbox" name="pnum" value="0" checked>
+          </td>
+          <td class="d-flex">
+            <div class="order-imgbox"> 
+              <img src="img/001.jpg" alt="product1"> 
+            </div> 
+            <div class="order-prdbox"> 
+              <h3>예쁘고 튼튼한 옷</h3> 
+              <p>색상: 보라, 사이즈: s, 수량: 1
+                <br>예쁘고 튼튼한 옷에 대한 설명입니다.
+              </p>          
+            </div> 
+          </td> 
+          <td class="text-center"> 
+          150,000원
+          </td> 
+          
+          <td class="text-center"> 
+            <span class="qt">1</span> 
+            <a href="#" class="plus"></a> 
+            <input type="hidden" name="qt" id="qt" value="'+rs[i].quantity+'"><br> 
+          
+          </td> 
+          <td>150,000원</td> 
+          <td>0원</td> 
+          <td>4,000원</td> 
+          <td> 
+            <button type="button" class="btn btn-outline-danger">삭제하기</button> 
+          </td> 
+        </tr>
+      </tbody>
+    </table>
+    <div class="total-order--money text-right py-3 pr-3 mr-4">
+      상품구매금액 129,000 + 배송비 0 (무료) = 합계 :129,000원
+    </div>
+    <div class="row py-5 mt-5">
+
+      <div>주문내역 출력</div>
+      <div>주문자 정보 = 이름, 주소, 일반전화, 휴대전화 ,이메일,
+         주문조회비밀번호(비회원로그인일 경우 출력), 비밀번호 확인
+      </div>
+      <div>주문자와 동일 또는 새로입력, 받으시는 분, 주소, 일반전화, 휴대전화, 배송메시지</div>
+      <div>결제예정금액 - </div>
+      <div>결제수단 - 카드결제, 무통장입금, 에스크로(실시간계좌이체), 에스크로(가상계좌)</div>
+    </div>
+  </div>
+  <footer>
+    <div class='container-fluid'>
+      <div class="card"> 
+          <div class="card-body">
+              <div class="row m-0 pt-5">
+                  <div class="card col-12 col-md-3">
+                      <div class="card-content"> <i class="fas fa-hand-holding-usd fa-3x"></i>
+                          <div class="card-title"> RECHARGE REPEAT CUSTOMER </div>
+                          <p><small>Save customers' cards for future phone orders</small></p>
+                          <div class="learn-more">
+                              <p> <small> LEARN MORE <label><i class="fas fa-angle-right"></i></label> </small> </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card col-12 col-md-3">
+                      <div class="card-content"> <i class="far fa-handshake fa-3x"></i>
+                          <div class="card-title"> ACCEPT ELECTRONIC CHECK </div>
+                          <p><small>Save customers' cards for future phone orders</small></p>
+                          <div class="learn-more">
+                              <p> <small> LEARN MORE <label><i class="fas fa-angle-right"></i></label> </small> </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card col-12 col-md-3">
+                      <div class="card-content"> <i class="fas fa-mobile-alt fa-3x"></i>
+                          <div class="card-title"> STREAMLINE PHONE PAYMENTS </div>
+                          <p><small>Save customers' cards for future phone orders</small></p>
+                          <div class="learn-more">
+                              <p> <small> LEARN MORE <label><i class="fas fa-angle-right"></i></label> </small> </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card col-12 col-md-3">
+                      <div class="card-content"> <i class="fas fa-user-secret fa-3x"></i>
+                          <div class="card-title"> STAY<br /> SECURE </div>
+                          <p><small>Save customers' cards for future phone orders</small></p>
+                          <div class="learn-more">
+                              <p> <small> LEARN MORE <label><i class="fas fa-angle-right"></i></label> </small> </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="card-footer row m-0">
+              <p> <label> <i class="fas fa-phone fa-rotate-90 text-primary"></i> </label> 800-601-0230</p>
+              <div>
+                  <p> <small class="follow-text">FOLLOW US ON Hoyeon's SHOP</small> <label class="footer-right"> <i class="fab fa-instagram"></i> <i class="fab fa-facebook-square"></i> <i class="fab fa-linkedin"></i> <i class="fab fa-twitter-square"></i> </label> </p>
+              </div>
+          </div>
+      </div>
+  </div>
+  </footer>
+</body>
+</html>

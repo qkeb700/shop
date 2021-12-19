@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <div class="container top-header">
+    <div class="row justify-content-between py-2">
+      <div class="top-left">
+        <!-- 로그인 -->
+        <a href="#">LOGIN</a>
+        <!-- 회원가입 -->
+        <a href="#" class="join">JOIN US</a>
+        <a href="#">ORDER</a>
+        <!-- 장바구니에 담긴 수량을 함께 표시 -->
+        <a href="#" class="carts">CART <span class="badge badge-secondary">0</span></a>
+        <a href="#">MYPAGE</a>
+      </div>
+      <div class="top-right">
+        <ul class="d-flex list-unstyled">
+          <li><a href="#">NOTICE</a></li>
+          <li><a href="#">Q&A</a></li>
+          <li><a href="#">배송조회</a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#" class="search"><i class="fas fa-search"></i></a>
+            <!-- 검색창 -->
+            <div class="searchbox">
+              <form action="" name="searchform" class="input-group">
+                <input type="text" class="form-control" placeholder="검색...">
+                <div class="input-group-append">
+                  <button class="btn btn-secondary">OK</button>
+                </div>
+              </form>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <header>
+    <div class="logo">
+      MY SHOP
+    </div>
+    <nav>
+      <div class="container">
+        <div class="row">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="navbar-nav gnb justify-content-between">
+            <li><a href="#">best</a></li>
+            <li><a href="#">new</a></li>
+            <li><a href="#" class="bold">made myshop</a>
+                <ul class="navbar-nav lnb">
+                    <li><a href="#">top</a></li>
+                    <li><a href="#">outer</a></li>
+                    <li><a href="#">pants</a></li>
+                    <li><a href="#">dress</a></li>
+                    <li><a href="#">skirt</a></li>
+                    <li><a href="#">acc</a></li>    
+                </ul>
+            </li>
+            <li><a href="#" class="bold">1만원대</a></li>
+            <li><a href="#">set</a></li>
+            <li><a href="#">top</a>
+                <ul class="navbar-nav lnb">
+                    <li><a href="#">knit</a></li>
+                    <li><a href="#">tee</a></li>
+                    <li><a href="#">cami</a></li>
+                    <li><a href="#">blouse</a></li>   
+                </ul>
+            </li>
+            <li><a href="#">outer</a>
+                <ul class="navbar-nav lnb">
+                    <li><a href="#">jacket</a></li>
+                    <li><a href="#">jumper</a></li>
+                    <li><a href="#">coat</a></li>
+                    <li><a href="#">vest</a></li>   
+                </ul>
+            </li>
+            <li><a href="#">pants</a>
+                <ul class="navbar-nav lnb">
+                    <li><a href="#">denim</a></li>
+                    <li><a href="#">leggings</a></li>
+                    <li><a href="#">shorts</a></li>
+                    <li><a href="#">slacks</a></li>   
+                </ul>
+            </li>
+            <li><a href="#">dress</a></li>
+            <li><a href="#">skirt</a></li>
+            <li><a href="#">shoes</a></li>
+            <li><a href="#">bag</a></li>
+            <li><a href="#">acc</a>
+                <ul class="navbar-nav lnb">
+                    <li><a href="#">scarf</a></li>
+                    <li><a href="#">socks</a></li>
+                    <li><a href="#">jewely</a></li>
+                    <li><a href="#">etc</a></li>   
+                </ul>
+            </li>
+            <li><a href="#">basic</a></li>
+            <li><a href="#" class="bold">sale</a>
+                <ul class="navbar-nav lnb">
+                    <li><a href="#">bag sale</a></li> 
+                </ul>
+            </li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="wrapper">
+      <h1 class="text-center mb-5">회원로그인</h1>
+      <form action="">
+        <div class="form-group">
+          <label for="userId">아이디</label>
+          <input type="text" class="form-control" id="userId" placeholder="회원아이디">
+          <label for="userPass">비밀번호</label>
+          <input type="password" class="form-control" id="userPass" placeholder="비밀번호">
+        </div>
+        <div class="form-group text-center">
+          <label for=""><input type="checkbox" value="ok"> 아이디 저장</label>
+        </div>
+        <div class="form-group">
+          <button type="button" class="btn btn-dark btn-block">로그인</button>
+        </div>
+        <div class="form-group">
+          <a href="order.html" class="btn btn-secondary btn-block">비회원 주문</a>
+        </div>
+        <hr>
+        <div class="form-group d-flex justify-content-between">
+          <a href="#">아이디 찾기</a>
+          <a href="#">비밀번호 찾기</a>
+          <a href="#">회원가입</a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <footer>
+    <div class='container-fluid'>
+      <div class="card"> 
+          <div class="card-body">
+              <div class="row m-0 pt-5">
+                  <div class="card col-12 col-md-3">
+                      <div class="card-content"> <i class="fas fa-hand-holding-usd fa-3x"></i>
+                          <div class="card-title"> RECHARGE REPEAT CUSTOMER </div>
+                          <p><small>Save customers' cards for future phone orders</small></p>
+                          <div class="learn-more">
+                              <p> <small> LEARN MORE <label><i class="fas fa-angle-right"></i></label> </small> </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card col-12 col-md-3">
+                      <div class="card-content"> <i class="far fa-handshake fa-3x"></i>
+                          <div class="card-title"> ACCEPT ELECTRONIC CHECK </div>
+                          <p><small>Save customers' cards for future phone orders</small></p>
+                          <div class="learn-more">
+                              <p> <small> LEARN MORE <label><i class="fas fa-angle-right"></i></label> </small> </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card col-12 col-md-3">
+                      <div class="card-content"> <i class="fas fa-mobile-alt fa-3x"></i>
+                          <div class="card-title"> STREAMLINE PHONE PAYMENTS </div>
+                          <p><small>Save customers' cards for future phone orders</small></p>
+                          <div class="learn-more">
+                              <p> <small> LEARN MORE <label><i class="fas fa-angle-right"></i></label> </small> </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card col-12 col-md-3">
+                      <div class="card-content"> <i class="fas fa-user-secret fa-3x"></i>
+                          <div class="card-title"> STAY<br /> SECURE </div>
+                          <p><small>Save customers' cards for future phone orders</small></p>
+                          <div class="learn-more">
+                              <p> <small> LEARN MORE <label><i class="fas fa-angle-right"></i></label> </small> </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="card-footer row m-0">
+              <p> <label> <i class="fas fa-phone fa-rotate-90 text-primary"></i> </label> 800-601-0230</p>
+              <div>
+                  <p> <small class="follow-text">FOLLOW US ON Hoyeon's SHOP</small> <label class="footer-right"> <i class="fab fa-instagram"></i> <i class="fab fa-facebook-square"></i> <i class="fab fa-linkedin"></i> <i class="fab fa-twitter-square"></i> </label> </p>
+              </div>
+          </div>
+      </div>
+  </div>
+  </footer>
+</body>
+</html>
